@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Deepfake Detection System</h1>
+        <p>Upload an image to analyze if it's a deepfake or real.</p>
+        
+        <!-- Form to upload image -->
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" id="image-upload" required>
+            <button type="submit">Analyze</button>
+        </form>
+
+        <!-- Display error if no file is selected -->
+        {% if error %}
+        <div class="error-message">
+            <p>{{ error }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Result</h1>
+
+        <!-- Display prediction result with dynamic color -->
+        <div class="result" style="background-color: {{ color }};">
+            <p>{{ prediction }}</p>
+        </div>
+
+        <!-- Back to Home -->
+        <a href="/" class="back-button">Analyze Another Image</a>
+    </div>
+</body>
+</html>
+
