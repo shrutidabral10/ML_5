@@ -1,4 +1,4 @@
-                                           Deepfake Detection Web App
+# Deepfake Detection Web App
 
 
 A simple yet effective web-based tool built using Flask and TensorFlow/Keras to detect whether an uploaded image is a real face or a deepfake. The model uses a CNN trained on face datasets and provides an intuitive UI for easy image upload and prediction.
